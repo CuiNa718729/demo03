@@ -1,0 +1,135 @@
+ul,li,h1,p{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url("../img/bg5.png");
+    overflow-x: hidden;
+}
+.preload{
+    position: fixed;
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    background: #fff;
+    top: 0;
+    height: 0;
+    z-index:100 ;
+}
+.spinner{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    width: 80px;
+    height: 80px;
+    background: url(../img/spinner.gif) no-repeat;
+}
+.container{
+    margin-top: 3em;
+}
+/*左侧小图标列表部分*/
+.aside{
+    width: 8%;
+    float: left;
+}
+.aside:after{
+    display:table;
+    content: "";
+    clear: both;
+}
+ul.tabs-list{
+    width:8%;
+    float:left;
+    margin-bottom: 10px;
+}
+.tabs-list li{
+    width:77px;
+    height: 77px;
+    padding:17px;
+    cursor: pointer;
+    background-color: #3b5998;
+    color: #fff;
+    text-align: center;
+    border-bottom: 1px solid #627AAD;
+}
+.icon-menu{
+    display:inline-block;
+    width:42px;
+    height:42px;
+    padding-top:13px ;
+    border-radius: 50%;
+}
+ul.tabs-list li.print{
+    margin-top: 60px;
+}
+ul.tabs-list li.print,li.download{
+    background-color: #303A41;
+    border: 1px solid #6B7078;
+}
+.print a,.download a{
+    color: #fff;
+}
+.tabs-list li:hover{
+    background-color: #fff;
+}
+.tabs-list li:hover .icon-menu{
+    background-color: #3b5998;
+}
+/*中间个人信息部分*/
+.middle{
+    width: 90%;
+    height: 600px;
+    margin-left: 90px;
+    padding: 10px;
+    background-color: #F4F4F4;
+    color:#466CA9;
+}
+.middle h1,h3{
+    border-bottom: 1px solid #e6e6e6;
+}
+h3>i{
+    display: inline-block;
+    height: 1px;
+    width: 13%;
+    position: relative;
+    top: 5px;
+    left: -85px;
+    border:1px solid #3b5998;
+}
+ul.about{
+    float: left;
+    width: 50%;
+}
+ul.about li{
+    border-bottom: 1px solid #e6e6e6;
+    font-size: 13px;
+    color: #717171;
+}
+ul.about li>.glyphicon{
+    color: #3b5998;
+}
+label:first-child{
+    margin-top: 35px;
+}
+ul.about li span.value{
+    text-align: left;
+    width: 220px;
+    float: right;
+    padding-top:10px;
+}
+label{
+    margin-right: 35px;
+    font-weight: bold;
+    padding:6px;
+}
+/*中间轮播图*/
+.cycle-slideshow{
+    float: right;
+    width: 348px;
+    height: 456px;
+    margin-top: 10px;
+}
+.cycle-slideshow img{
+    width: 100%;
+}
